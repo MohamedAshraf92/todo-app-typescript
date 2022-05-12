@@ -1,0 +1,50 @@
+.todo-form {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: rgb(212, 235, 236);
+  border-radius: 0.5rem;
+  padding: 2rem;
+
+  .label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5f9ea0;
+  }
+
+  .textarea {
+    width: 100%;
+    outline: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border-color: cadetblue;
+    background-color: rgb(231, 239, 240);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+
+    .form-btn {
+      width: 15%;
+      border-radius: 0.5rem;
+      outline: none;
+      padding: 0.3rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border: 1px solid cadetblue;
+      background-color: #5f9ea0;
+      color: white;
+
+      &:hover {
+        color: #5f9ea0;
+        background-color: white;
+      }
+    }
+  }
+}

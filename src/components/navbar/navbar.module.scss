@@ -1,0 +1,28 @@
+.navbar {
+  height: 5rem;
+  background-color: cadetblue;
+
+  .nav-items {
+    max-width: 700px;
+    height: 100%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    .navlink {
+      font-size: 1.9rem;
+      text-decoration: none;
+      color: burlywood;
+    }
+
+    .navlink-active {
+      font-size: 2rem;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
