@@ -18,7 +18,17 @@
     {
       "title": "Learn typescript",
       "id": 5,
-      "done": false
+      "done": true
+    },
+    {
+      "title": "Update the project",
+      "id": 6,
+      "done": true
+    },
+    {
+      "title": "Push a commit",
+      "done": false,
+      "id": 7
     }
   ]
 }

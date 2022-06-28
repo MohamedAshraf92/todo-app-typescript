@@ -22,7 +22,7 @@ export const getSingleTodo = async ({ queryKey }: any) => {
   const [_key, { id }] = queryKey;
   if (id) {
     try {
-      const res = await axios.get(`/${id}`);
+      const res = await axiosInstance.get(`/${id}`);
       const todo = res.data;
       return todo;
     } catch (err) {
@@ -33,7 +33,7 @@ export const getSingleTodo = async ({ queryKey }: any) => {
 
 export const addTodo = async (newTodo: Todo) => {
   try {
-    const res = await axios.post("/", newTodo);
+    const res = await axiosInstance.post("/", newTodo);
     return res;
   } catch (err) {
     console.log(err);
@@ -44,7 +44,7 @@ export const updateTodo = async (todo: Todo) => {
   console.log(todo);
 
   try {
-    const res = await axios.put(`/${todo.id}`, todo);
+    const res = await axiosInstance.put(`/${todo.id}`, todo);
     return res;
   } catch (err) {
     console.log(err);
@@ -53,7 +53,7 @@ export const updateTodo = async (todo: Todo) => {
 
 export const deleteTodo = async (id: number) => {
   try {
-    const res = await axios.delete(`/${id}`);
+    const res = await axiosInstance.delete(`/${id}`);
     const todo = res.data;
     return todo;
   } catch (err) {
