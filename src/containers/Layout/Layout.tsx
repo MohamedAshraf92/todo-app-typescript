@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import Navbar from "../../components/navbar/navbar";
 
 type iProps = {
-  children?: any;
+  children: React.ReactChild;
 };
 
 const Layout = (props: iProps) => {

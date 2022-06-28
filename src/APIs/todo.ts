@@ -1,14 +1,19 @@
-import axios from "../axios";
+import axios from "axios";
+import axiosInstance from "../axios";
 
 import { Todo } from "../types/todo";
 
 export const getTodos = async () => {
   try {
-    const res = await axios.get("/");
+    const res = await axiosInstance.get("/");
     const todos = res.data;
     return todos;
   } catch (err) {
-    console.log(err);
+    if (axios.isAxiosError(err)) {
+      throw err;
+    } else {
+      throw Error("Something Went Rong");
+    }
   }
 };
 

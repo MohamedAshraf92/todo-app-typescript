@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router";
-import {
-  useQuery,
-  // useMutation,
-  // useQueryClient,
-  // QueryClient,
-  // QueryClientProvider,
-} from "react-query";
+import { useQuery } from "react-query";
 
 import Layout from "./containers/Layout/Layout";
 import Board from "./containers/Board/Board";
